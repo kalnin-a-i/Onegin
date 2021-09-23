@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-void writewords(char* lineptrs[], int nlines)
+void WriteText(char* lineptrs[], int nlines)
 {
     int i;
 

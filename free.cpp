@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-void freememory(char* lineptrs[], int nlines)
+void FreeMemory(char* lineptrs[], int nlines)
 {
     int i;
 
