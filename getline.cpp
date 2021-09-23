@@ -1,5 +1,15 @@
 # include <stdio.h>
 
+//----------------------------------------------------------------
+/** @file */
+//! Reads line from text file ignoring spaces and punctuation marks
+//! @param[in] line pointer to string where reads line
+//! @param[in] file pointer to file from we read
+//! @param[in] maxlen maximal length of line
+//! @return number of symbols in line
+//! @note if returns 0 line = "\0"
+//! @note if return -1 length of line > maximal length
+//-----------------------------------------------------------------
 int GetLine(char *line, FILE *file, int maxlen)
 {
     char c;

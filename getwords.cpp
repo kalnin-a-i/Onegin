@@ -6,6 +6,7 @@ int GetLine(char *line, FILE *file, int maxlen);
 
 
 //---------------------------------------------------------------------------------------------------
+/** @file */
 //! reading lines from input file and write their adresses to array of ponters
 //! @param[in] lineptrs array of pointer to lines
 //! @param[in] maxlines maximal number of lines

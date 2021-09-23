@@ -3,6 +3,13 @@
 #include <math.h>
 #include <stdio.h>
 
+//------------------------------------------------------------------------
+/** @file */
+//! Compares two strings from the end
+//! @param[in] str1 1st string
+//! @param[in] 2d string
+//! @return positive number if str2 > str1, 0 if str1 = str2, otherwise 0
+//-------------------------------------------------------------------------
 int RevStrcmp(char* str1, char* str2)
 {
     assert(str1 != NULL);
