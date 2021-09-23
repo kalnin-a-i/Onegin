@@ -1,1 +1,1 @@
-To see docs open file index.html in index.
+To see docs open file index.html in html.
