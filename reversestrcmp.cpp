@@ -46,7 +46,7 @@ void TestRev()
     CheckRev("abcd", "dcba", -1);
     CheckRev("abcd", "edcba", -1);
     CheckRev("asdf", "asdf", 0);
-    CheckRev("asdfg", "asdfк", 1);
+    CheckRev("asdfg", "asdfk", 1);
     CheckRev("f", "k", 1);
     CheckRev("fk", "kkk", 1);
 }
