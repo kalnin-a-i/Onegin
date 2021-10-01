@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['revstrcmp_25',['RevStrcmp',['../main_8cpp.html#aa640bb0ba3334a741b75b87787df3c50',1,'RevStrcmp(char *str1, char *str2):&#160;reversestrcmp.cpp'],['../reversestrcmp_8cpp.html#aa640bb0ba3334a741b75b87787df3c50',1,'RevStrcmp(char *str1, char *str2):&#160;reversestrcmp.cpp']]]
+  ['revstrcmp_28',['RevStrcmp',['../main_8cpp.html#ad88de61597f7e3d30e8b2b39213fbeb1',1,'RevStrcmp(line *line1, line *line2):&#160;reverselinecmp.cpp'],['../reverselinecmp_8cpp.html#ad88de61597f7e3d30e8b2b39213fbeb1',1,'RevStrcmp(line *line1, line *line2):&#160;reverselinecmp.cpp']]]
 ];

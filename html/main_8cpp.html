@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -49,23 +45,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -80,6 +59,7 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
@@ -90,8 +70,7 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
-<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;line.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.cpp:</div>
 <div class="dyncontent">
@@ -106,32 +85,32 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4537032a96f22d77bd9089be508cfc98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a4537032a96f22d77bd9089be508cfc98">GetText</a> (char *lineptrs[], int maxlines, FILE *poem)</td></tr>
-<tr class="separator:a4537032a96f22d77bd9089be508cfc98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e350270e3492147fc051a61d7b7628"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a73e350270e3492147fc051a61d7b7628">GetText</a> (<a class="el" href="structline.html">line</a> *lineptrs[], int maxlines, FILE *file)</td></tr>
+<tr class="separator:a73e350270e3492147fc051a61d7b7628"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f2bb0c9a00a7e1e7924a4399af02cce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a7f2bb0c9a00a7e1e7924a4399af02cce">qSort</a> (void *v[], int left, int right, int(*comp)(void *, void *))</td></tr>
 <tr class="separator:a7f2bb0c9a00a7e1e7924a4399af02cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65e1287a1d1f5b9044a355d8a0c6e9e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a65e1287a1d1f5b9044a355d8a0c6e9e3">WriteText</a> (char *lineptrs[], int nlines)</td></tr>
-<tr class="separator:a65e1287a1d1f5b9044a355d8a0c6e9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71f59d9eef862e1142d332b793835cd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a71f59d9eef862e1142d332b793835cd9">FreeMemory</a> (char *lineptrs[], int nlines)</td></tr>
-<tr class="separator:a71f59d9eef862e1142d332b793835cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa640bb0ba3334a741b75b87787df3c50"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aa640bb0ba3334a741b75b87787df3c50">RevStrcmp</a> (char *str1, char *str2)</td></tr>
-<tr class="separator:aa640bb0ba3334a741b75b87787df3c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6013d48bea99f37f1fd9d14170ee7617"><td class="memItemLeft" align="right" valign="top"><a id="a6013d48bea99f37f1fd9d14170ee7617"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>TestRev</b> ()</td></tr>
-<tr class="separator:a6013d48bea99f37f1fd9d14170ee7617"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
-<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b59e7bd32ecd62fff4318fc829b995"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a57b59e7bd32ecd62fff4318fc829b995">WriteText</a> (<a class="el" href="structline.html">line</a> *lineptrs[], int nlines, int out_ind, char *filepath)</td></tr>
+<tr class="separator:a57b59e7bd32ecd62fff4318fc829b995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c37e57cba42f9c1a6bf00b4226ed9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae2c37e57cba42f9c1a6bf00b4226ed9f">FreeMemory</a> (<a class="el" href="structline.html">line</a> *lineptrs[], int nlines)</td></tr>
+<tr class="separator:ae2c37e57cba42f9c1a6bf00b4226ed9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88de61597f7e3d30e8b2b39213fbeb1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ad88de61597f7e3d30e8b2b39213fbeb1">RevStrcmp</a> (<a class="el" href="structline.html">line</a> *line1, <a class="el" href="structline.html">line</a> *line2)</td></tr>
+<tr class="separator:ad88de61597f7e3d30e8b2b39213fbeb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fe70a21e5f14ff0a52d76c18c3b50d8"><td class="memItemLeft" align="right" valign="top"><a id="a4fe70a21e5f14ff0a52d76c18c3b50d8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>MyStrcmp</b> (<a class="el" href="structline.html">line</a> *line1, <a class="el" href="structline.html">line</a> *line2)</td></tr>
+<tr class="separator:a4fe70a21e5f14ff0a52d76c18c3b50d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top"><a id="a0ddf1224851353fc92bfbff6f499fa97"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (int argc, char *argv[])</td></tr>
+<tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a923a1d5641cb596a81935ecca818a466"><td class="memItemLeft" align="right" valign="top"><a id="a923a1d5641cb596a81935ecca818a466"></a>
-char *&#160;</td><td class="memItemRight" valign="bottom"><b>lineptrs</b> [MAXLINES]</td></tr>
-<tr class="separator:a923a1d5641cb596a81935ecca818a466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3bf577c0ecab9541d32c618cafef079"><td class="memItemLeft" align="right" valign="top"><a id="ad3bf577c0ecab9541d32c618cafef079"></a>
+<a class="el" href="structline.html">line</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>lineptrs</b> [MAXLINES]</td></tr>
+<tr class="separator:ad3bf577c0ecab9541d32c618cafef079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a71f59d9eef862e1142d332b793835cd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71f59d9eef862e1142d332b793835cd9">&#9670;&nbsp;</a></span>FreeMemory()</h2>
+<a id="ae2c37e57cba42f9c1a6bf00b4226ed9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2c37e57cba42f9c1a6bf00b4226ed9f">&#9670;&nbsp;</a></span>FreeMemory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -139,7 +118,7 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>lineptrs</b> [MAXLI
         <tr>
           <td class="memname">void FreeMemory </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype"><a class="el" href="structline.html">line</a> *&#160;</td>
           <td class="paramname"><em>lineptrs</em>[], </td>
         </tr>
         <tr>
@@ -165,8 +144,8 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>lineptrs</b> [MAXLI
 
 </div>
 </div>
-<a id="a4537032a96f22d77bd9089be508cfc98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4537032a96f22d77bd9089be508cfc98">&#9670;&nbsp;</a></span>GetText()</h2>
+<a id="a73e350270e3492147fc051a61d7b7628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e350270e3492147fc051a61d7b7628">&#9670;&nbsp;</a></span>GetText()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,7 +153,7 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>lineptrs</b> [MAXLI
         <tr>
           <td class="memname">int GetText </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype"><a class="el" href="structline.html">line</a> *&#160;</td>
           <td class="paramname"><em>lineptrs</em>[], </td>
         </tr>
         <tr>
@@ -187,7 +166,7 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>lineptrs</b> [MAXLI
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">FILE *&#160;</td>
-          <td class="paramname"><em>poem</em>&#160;</td>
+          <td class="paramname"><em>file</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -257,8 +236,8 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>lineptrs</b> [MAXLI
 
 </div>
 </div>
-<a id="aa640bb0ba3334a741b75b87787df3c50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa640bb0ba3334a741b75b87787df3c50">&#9670;&nbsp;</a></span>RevStrcmp()</h2>
+<a id="ad88de61597f7e3d30e8b2b39213fbeb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad88de61597f7e3d30e8b2b39213fbeb1">&#9670;&nbsp;</a></span>RevStrcmp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -266,14 +245,14 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>lineptrs</b> [MAXLI
         <tr>
           <td class="memname">int RevStrcmp </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>str1</em>, </td>
+          <td class="paramtype"><a class="el" href="structline.html">line</a> *&#160;</td>
+          <td class="paramname"><em>line1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>str2</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structline.html">line</a> *&#160;</td>
+          <td class="paramname"><em>line2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -284,8 +263,7 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>lineptrs</b> [MAXLI
 </div><div class="memdoc">
 <p>Compares two strings from the end </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">str1</td><td>1st string </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">2d</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line1</td><td>1st string and it<code>s length @param[in] line2 2d string and it</code>s length </td></tr>
   </table>
   </dd>
 </dl>
@@ -293,8 +271,8 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>lineptrs</b> [MAXLI
 
 </div>
 </div>
-<a id="a65e1287a1d1f5b9044a355d8a0c6e9e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65e1287a1d1f5b9044a355d8a0c6e9e3">&#9670;&nbsp;</a></span>WriteText()</h2>
+<a id="a57b59e7bd32ecd62fff4318fc829b995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57b59e7bd32ecd62fff4318fc829b995">&#9670;&nbsp;</a></span>WriteText()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -302,14 +280,26 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>lineptrs</b> [MAXLI
         <tr>
           <td class="memname">void WriteText </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype"><a class="el" href="structline.html">line</a> *&#160;</td>
           <td class="paramname"><em>lineptrs</em>[], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>nlines</em>&#160;</td>
+          <td class="paramname"><em>nlines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>out_ind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filepath</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -322,6 +312,8 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>lineptrs</b> [MAXLI
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">lineptrs</td><td>array of pointers </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nlines</td><td>number of strings </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_ind</td><td>the way how to print </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filepath</td><td>path to file there to print </td></tr>
   </table>
   </dd>
 </dl>
@@ -329,15 +321,11 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>lineptrs</b> [MAXLI
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
 </body>
 </html>

@@ -1,21 +1,27 @@
 var indexSectionsWithContent =
 {
-  0: "fgmqrsw",
-  1: "fgmqrw",
-  2: "fgqrsw"
+  0: "fglmqrsw",
+  1: "l",
+  2: "fgmqrw",
+  3: "fgqrsw",
+  4: "r"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "files",
-  2: "functions"
+  1: "classes",
+  2: "files",
+  3: "functions",
+  4: "pages"
 };
 
 var indexSectionLabels =
 {
   0: "All",
-  1: "Files",
-  2: "Functions"
+  1: "Classes",
+  2: "Files",
+  3: "Functions",
+  4: "Pages"
 };
 

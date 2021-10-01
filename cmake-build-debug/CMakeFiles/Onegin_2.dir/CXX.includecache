@@ -8,9 +8,11 @@
 
 /home/alexey/CLionProjects/Onegin_2/line.h
 
-/home/alexey/CLionProjects/Onegin_2/main.cpp
-stdio.h
--
+/home/alexey/CLionProjects/Onegin_2/reverselinecmp.cpp
+string.h
+/home/alexey/CLionProjects/Onegin_2/string.h
+assert.h
+/home/alexey/CLionProjects/Onegin_2/assert.h
 line.h
 /home/alexey/CLionProjects/Onegin_2/line.h
 

@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -49,23 +45,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('writewords_8cpp.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -80,6 +59,7 @@ $(document).ready(function(){initNavTree('writewords_8cpp.html',''); initResizab
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
@@ -87,7 +67,8 @@ $(document).ready(function(){initNavTree('writewords_8cpp.html',''); initResizab
 <div class="title">writewords.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<div class="textblock"><code>#include &quot;stdio.h&quot;</code><br />
+<code>#include &quot;line.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for writewords.cpp:</div>
 <div class="dyncontent">
@@ -96,12 +77,12 @@ Include dependency graph for writewords.cpp:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a65e1287a1d1f5b9044a355d8a0c6e9e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="writewords_8cpp.html#a65e1287a1d1f5b9044a355d8a0c6e9e3">WriteText</a> (char *lineptrs[], int nlines)</td></tr>
-<tr class="separator:a65e1287a1d1f5b9044a355d8a0c6e9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b59e7bd32ecd62fff4318fc829b995"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="writewords_8cpp.html#a57b59e7bd32ecd62fff4318fc829b995">WriteText</a> (<a class="el" href="structline.html">line</a> *lineptrs[], int nlines, int out_ind, char *filepath)</td></tr>
+<tr class="separator:a57b59e7bd32ecd62fff4318fc829b995"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a65e1287a1d1f5b9044a355d8a0c6e9e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65e1287a1d1f5b9044a355d8a0c6e9e3">&#9670;&nbsp;</a></span>WriteText()</h2>
+<a id="a57b59e7bd32ecd62fff4318fc829b995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57b59e7bd32ecd62fff4318fc829b995">&#9670;&nbsp;</a></span>WriteText()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -109,14 +90,26 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void WriteText </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype"><a class="el" href="structline.html">line</a> *&#160;</td>
           <td class="paramname"><em>lineptrs</em>[], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>nlines</em>&#160;</td>
+          <td class="paramname"><em>nlines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>out_ind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filepath</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -129,6 +122,8 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">lineptrs</td><td>array of pointers </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nlines</td><td>number of strings </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_ind</td><td>the way how to print </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filepath</td><td>path to file there to print </td></tr>
   </table>
   </dd>
 </dl>
@@ -136,15 +131,11 @@ Functions</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="writewords_8cpp.html">writewords.cpp</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
 </body>
 </html>

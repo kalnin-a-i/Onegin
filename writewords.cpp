@@ -6,6 +6,8 @@
 //! Print strings to the screen according to their order in an array of pointers
 //! @param[in] lineptrs array of pointers
 //! @param[in] nlines number of strings
+//! @param[in] out_ind the way how to print
+//! @param[in] filepath path to file there to print
 //------------------------------------------------
 void WriteText(line *lineptrs[], int nlines, int out_ind, char *filepath)
 {

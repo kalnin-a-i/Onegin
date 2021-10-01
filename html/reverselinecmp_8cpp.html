@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Onegin: free.cpp File Reference</title>
+<title>Onegin: reverselinecmp.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,40 +64,41 @@ $(function() {
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">free.cpp File Reference</div>  </div>
+<div class="title">reverselinecmp.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<div class="textblock"><code>#include &quot;string.h&quot;</code><br />
+<code>#include &quot;assert.h&quot;</code><br />
 <code>#include &quot;line.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Include dependency graph for free.cpp:</div>
+Include dependency graph for reverselinecmp.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="free_8cpp__incl.png" border="0" usemap="#free_8cpp" alt=""/></div>
+<div class="center"><img src="reverselinecmp_8cpp__incl.png" border="0" usemap="#reverselinecmp_8cpp" alt=""/></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae2c37e57cba42f9c1a6bf00b4226ed9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="free_8cpp.html#ae2c37e57cba42f9c1a6bf00b4226ed9f">FreeMemory</a> (<a class="el" href="structline.html">line</a> *lineptrs[], int nlines)</td></tr>
-<tr class="separator:ae2c37e57cba42f9c1a6bf00b4226ed9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88de61597f7e3d30e8b2b39213fbeb1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reverselinecmp_8cpp.html#ad88de61597f7e3d30e8b2b39213fbeb1">RevStrcmp</a> (<a class="el" href="structline.html">line</a> *line1, <a class="el" href="structline.html">line</a> *line2)</td></tr>
+<tr class="separator:ad88de61597f7e3d30e8b2b39213fbeb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ae2c37e57cba42f9c1a6bf00b4226ed9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2c37e57cba42f9c1a6bf00b4226ed9f">&#9670;&nbsp;</a></span>FreeMemory()</h2>
+<a id="ad88de61597f7e3d30e8b2b39213fbeb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad88de61597f7e3d30e8b2b39213fbeb1">&#9670;&nbsp;</a></span>RevStrcmp()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void FreeMemory </td>
+          <td class="memname">int RevStrcmp </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structline.html">line</a> *&#160;</td>
-          <td class="paramname"><em>lineptrs</em>[], </td>
+          <td class="paramname"><em>line1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>nlines</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structline.html">line</a> *&#160;</td>
+          <td class="paramname"><em>line2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -106,13 +107,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Frees memory allocated during program execution </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Compares two strings from the end </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">lineptrs</td><td>an array of pointers to which memory is allocated </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nlines</td><td>number of pointers in lineptrs </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line1</td><td>1st string and it<code>s length @param[in] line2 2d string and it</code>s length </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>positive number if str2 &gt; str1, 0 if str1 = str2, otherwise 0 </dd></dl>
 
 </div>
 </div>

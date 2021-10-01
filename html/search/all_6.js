@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['writetext_12',['WriteText',['../main_8cpp.html#a65e1287a1d1f5b9044a355d8a0c6e9e3',1,'WriteText(char *lineptrs[], int nlines):&#160;writewords.cpp'],['../writewords_8cpp.html#a65e1287a1d1f5b9044a355d8a0c6e9e3',1,'WriteText(char *lineptrs[], int nlines):&#160;writewords.cpp']]],
-  ['writewords_2ecpp_13',['writewords.cpp',['../writewords_8cpp.html',1,'']]]
+  ['swap_13',['swap',['../qsort_8cpp.html#a1403538fb6881fdb9f6a87739f1d278f',1,'qsort.cpp']]]
 ];
