@@ -7,9 +7,21 @@
 //! @param[in] lineptrs array of pointers
 //! @param[in] nlines number of strings
 //------------------------------------------------
-void WriteText(line *lineptrs[], int nlines)
+void WriteText(line *lineptrs[], int nlines, int out_ind, char *filepath)
 {
     int i;
+
+    if (out_ind >= 2 )
+    {
+        FILE *file = fopen(filepath, "w");
+
+        for (i = 0; i < nlines; i++)
+        {
+            fprintf(file, "%s \n", lineptrs[i]->str);
+        }
+        fclose(file);
+        return;
+    }
 
     for (i = 0; i < nlines; i++)
     {

@@ -273,29 +273,29 @@ qsort.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Onegin_2.dir/build.make CMakeFiles/Onegin_2.dir/qsort.cpp.s
 .PHONY : qsort.cpp.s
 
-reversestrcmp.o: reversestrcmp.cpp.o
-.PHONY : reversestrcmp.o
+reverselinecmp.o: reverselinecmp.cpp.o
+.PHONY : reverselinecmp.o
 
 # target to build an object file
-reversestrcmp.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Onegin_2.dir/build.make CMakeFiles/Onegin_2.dir/reversestrcmp.cpp.o
-.PHONY : reversestrcmp.cpp.o
+reverselinecmp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Onegin_2.dir/build.make CMakeFiles/Onegin_2.dir/reverselinecmp.cpp.o
+.PHONY : reverselinecmp.cpp.o
 
-reversestrcmp.i: reversestrcmp.cpp.i
-.PHONY : reversestrcmp.i
+reverselinecmp.i: reverselinecmp.cpp.i
+.PHONY : reverselinecmp.i
 
 # target to preprocess a source file
-reversestrcmp.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Onegin_2.dir/build.make CMakeFiles/Onegin_2.dir/reversestrcmp.cpp.i
-.PHONY : reversestrcmp.cpp.i
+reverselinecmp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Onegin_2.dir/build.make CMakeFiles/Onegin_2.dir/reverselinecmp.cpp.i
+.PHONY : reverselinecmp.cpp.i
 
-reversestrcmp.s: reversestrcmp.cpp.s
-.PHONY : reversestrcmp.s
+reverselinecmp.s: reverselinecmp.cpp.s
+.PHONY : reverselinecmp.s
 
 # target to generate assembly for a file
-reversestrcmp.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Onegin_2.dir/build.make CMakeFiles/Onegin_2.dir/reversestrcmp.cpp.s
-.PHONY : reversestrcmp.cpp.s
+reverselinecmp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Onegin_2.dir/build.make CMakeFiles/Onegin_2.dir/reverselinecmp.cpp.s
+.PHONY : reverselinecmp.cpp.s
 
 writewords.o: writewords.cpp.o
 .PHONY : writewords.o
@@ -348,9 +348,9 @@ help:
 	@echo "... qsort.o"
 	@echo "... qsort.i"
 	@echo "... qsort.s"
-	@echo "... reversestrcmp.o"
-	@echo "... reversestrcmp.i"
-	@echo "... reversestrcmp.s"
+	@echo "... reverselinecmp.o"
+	@echo "... reverselinecmp.i"
+	@echo "... reverselinecmp.s"
 	@echo "... writewords.o"
 	@echo "... writewords.i"
 	@echo "... writewords.s"

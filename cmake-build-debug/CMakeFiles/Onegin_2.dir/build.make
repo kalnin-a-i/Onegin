@@ -144,18 +144,18 @@ CMakeFiles/Onegin_2.dir/free.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Onegin_2.dir/free.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/Onegin_2/free.cpp -o CMakeFiles/Onegin_2.dir/free.cpp.s
 
-CMakeFiles/Onegin_2.dir/reversestrcmp.cpp.o: CMakeFiles/Onegin_2.dir/flags.make
-CMakeFiles/Onegin_2.dir/reversestrcmp.cpp.o: ../reversestrcmp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/CLionProjects/Onegin_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Onegin_2.dir/reversestrcmp.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Onegin_2.dir/reversestrcmp.cpp.o -c /home/alexey/CLionProjects/Onegin_2/reversestrcmp.cpp
+CMakeFiles/Onegin_2.dir/reverselinecmp.cpp.o: CMakeFiles/Onegin_2.dir/flags.make
+CMakeFiles/Onegin_2.dir/reverselinecmp.cpp.o: ../reverselinecmp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/CLionProjects/Onegin_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Onegin_2.dir/reverselinecmp.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Onegin_2.dir/reverselinecmp.cpp.o -c /home/alexey/CLionProjects/Onegin_2/reverselinecmp.cpp
 
-CMakeFiles/Onegin_2.dir/reversestrcmp.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Onegin_2.dir/reversestrcmp.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/CLionProjects/Onegin_2/reversestrcmp.cpp > CMakeFiles/Onegin_2.dir/reversestrcmp.cpp.i
+CMakeFiles/Onegin_2.dir/reverselinecmp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Onegin_2.dir/reverselinecmp.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/CLionProjects/Onegin_2/reverselinecmp.cpp > CMakeFiles/Onegin_2.dir/reverselinecmp.cpp.i
 
-CMakeFiles/Onegin_2.dir/reversestrcmp.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Onegin_2.dir/reversestrcmp.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/Onegin_2/reversestrcmp.cpp -o CMakeFiles/Onegin_2.dir/reversestrcmp.cpp.s
+CMakeFiles/Onegin_2.dir/reverselinecmp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Onegin_2.dir/reverselinecmp.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/Onegin_2/reverselinecmp.cpp -o CMakeFiles/Onegin_2.dir/reverselinecmp.cpp.s
 
 CMakeFiles/Onegin_2.dir/linecmp.cpp.o: CMakeFiles/Onegin_2.dir/flags.make
 CMakeFiles/Onegin_2.dir/linecmp.cpp.o: ../linecmp.cpp
@@ -178,7 +178,7 @@ Onegin_2_OBJECTS = \
 "CMakeFiles/Onegin_2.dir/writewords.cpp.o" \
 "CMakeFiles/Onegin_2.dir/getline.cpp.o" \
 "CMakeFiles/Onegin_2.dir/free.cpp.o" \
-"CMakeFiles/Onegin_2.dir/reversestrcmp.cpp.o" \
+"CMakeFiles/Onegin_2.dir/reverselinecmp.cpp.o" \
 "CMakeFiles/Onegin_2.dir/linecmp.cpp.o"
 
 # External object files for target Onegin_2
@@ -190,7 +190,7 @@ Onegin_2: CMakeFiles/Onegin_2.dir/getwords.cpp.o
 Onegin_2: CMakeFiles/Onegin_2.dir/writewords.cpp.o
 Onegin_2: CMakeFiles/Onegin_2.dir/getline.cpp.o
 Onegin_2: CMakeFiles/Onegin_2.dir/free.cpp.o
-Onegin_2: CMakeFiles/Onegin_2.dir/reversestrcmp.cpp.o
+Onegin_2: CMakeFiles/Onegin_2.dir/reverselinecmp.cpp.o
 Onegin_2: CMakeFiles/Onegin_2.dir/linecmp.cpp.o
 Onegin_2: CMakeFiles/Onegin_2.dir/build.make
 Onegin_2: CMakeFiles/Onegin_2.dir/link.txt

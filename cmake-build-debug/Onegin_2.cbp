@@ -103,7 +103,7 @@
 		<Unit filename="/home/alexey/CLionProjects/Onegin_2/qsort.cpp">
 			<Option target="Onegin_2"/>
 		</Unit>
-		<Unit filename="/home/alexey/CLionProjects/Onegin_2/reversestrcmp.cpp">
+		<Unit filename="/home/alexey/CLionProjects/Onegin_2/reverselinecmp.cpp">
 			<Option target="Onegin_2"/>
 		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/Onegin_2/writewords.cpp">

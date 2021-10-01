@@ -14,7 +14,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/alexey/CLionProjects/Onegin_2/linecmp.cpp" "/home/alexey/CLionProjects/Onegin_2/cmake-build-debug/CMakeFiles/Onegin_2.dir/linecmp.cpp.o"
   "/home/alexey/CLionProjects/Onegin_2/main.cpp" "/home/alexey/CLionProjects/Onegin_2/cmake-build-debug/CMakeFiles/Onegin_2.dir/main.cpp.o"
   "/home/alexey/CLionProjects/Onegin_2/qsort.cpp" "/home/alexey/CLionProjects/Onegin_2/cmake-build-debug/CMakeFiles/Onegin_2.dir/qsort.cpp.o"
-  "/home/alexey/CLionProjects/Onegin_2/reversestrcmp.cpp" "/home/alexey/CLionProjects/Onegin_2/cmake-build-debug/CMakeFiles/Onegin_2.dir/reversestrcmp.cpp.o"
+  "/home/alexey/CLionProjects/Onegin_2/reverselinecmp.cpp" "/home/alexey/CLionProjects/Onegin_2/cmake-build-debug/CMakeFiles/Onegin_2.dir/reverselinecmp.cpp.o"
   "/home/alexey/CLionProjects/Onegin_2/writewords.cpp" "/home/alexey/CLionProjects/Onegin_2/cmake-build-debug/CMakeFiles/Onegin_2.dir/writewords.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

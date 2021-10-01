@@ -17,9 +17,9 @@ CMakeFiles/Onegin_2.dir/main.cpp.o: \
  ../main.cpp
 CMakeFiles/Onegin_2.dir/qsort.cpp.o: \
  ../qsort.cpp
-CMakeFiles/Onegin_2.dir/reversestrcmp.cpp.o: \
+CMakeFiles/Onegin_2.dir/reverselinecmp.cpp.o: \
  ../line.h \
- ../reversestrcmp.cpp
+ ../reverselinecmp.cpp
 CMakeFiles/Onegin_2.dir/writewords.cpp.o: \
  ../line.h \
  ../writewords.cpp

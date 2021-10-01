@@ -5,7 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Onegin_2.dir/linecmp.cpp.o"
   "CMakeFiles/Onegin_2.dir/main.cpp.o"
   "CMakeFiles/Onegin_2.dir/qsort.cpp.o"
-  "CMakeFiles/Onegin_2.dir/reversestrcmp.cpp.o"
+  "CMakeFiles/Onegin_2.dir/reverselinecmp.cpp.o"
   "CMakeFiles/Onegin_2.dir/writewords.cpp.o"
   "Onegin_2"
   "Onegin_2.pdb"
