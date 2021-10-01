@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include "stdio.h"
+#include "line.h"
 
 //-------------------------------------------
 /** @file */
@@ -6,13 +7,13 @@
 //! @param[in] lineptrs array of pointers
 //! @param[in] nlines number of strings
 //------------------------------------------------
-void WriteText(char* lineptrs[], int nlines)
+void WriteText(line *lineptrs[], int nlines)
 {
     int i;
 
     for (i = 0; i < nlines; i++)
     {
-        printf("%s \n", lineptrs[i]);
+        printf("%s \n", lineptrs[i]->str);
     }
 }
 

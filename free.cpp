@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "line.h"
 
 //----------------------------------------------
 /** @file */
@@ -7,11 +8,12 @@
 //! @param[in] nlines number of pointers in lineptrs
 //----------------------------------------------------------------
 
-void FreeMemory(char* lineptrs[], int nlines)
+void FreeMemory(line* lineptrs[], int nlines)
 {
     int i;
 
     for (i = 0; i < nlines; i++){
+        free(lineptrs[i]->str);
         free(lineptrs[i]);
     }
 }

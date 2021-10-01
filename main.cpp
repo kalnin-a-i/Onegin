@@ -1,23 +1,21 @@
 #include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include "line.h"
+
 //----------------------------------------------
 /** @file */
 //---------------------------------------------
 
-int GetText(char* lineptrs[], int maxlines, FILE* poem);
+int GetText(line *lineptrs[], int maxlines, FILE *file);
 void qSort(void *v[], int left, int right, int (*comp)(void *, void *));
-void WriteText(char* lineptrs[], int nlines);
-void FreeMemory(char* lineptrs[], int nlines);
-int RevStrcmp(char* str1, char* str2);
-void TestRev();
+void WriteText(line *lineptrs[], int nlines);
+void FreeMemory(line* lineptrs[], int nlines);
+int RevStrcmp(line* line1, line* line2);
+int MyStrcmp(line *line1, line *line2);
 
 #define MAXLINES 5000
-char *lineptrs[MAXLINES];
+line *lineptrs[MAXLINES];
 
 int main() {
-
-    //TestRev();
 
     FILE* file;
     file = fopen("/home/alexey/CLionProjects/Onegin_2/Onegin", "r");
@@ -26,11 +24,11 @@ int main() {
 
     if (nlines >= 0)
     {
-        printf("\n\nAlphabet order\n\n");
-        qSort((void**) lineptrs, 0, nlines - 1, (int (*)(void*, void*))(strcmp));
+        printf("Alphabet order:\n\n");
+        qSort((void**) lineptrs, 0, nlines - 1, (int (*)(void*, void*))(MyStrcmp));
         WriteText(lineptrs, nlines);
 
-        printf("\n\nReverse alphabet order\n\n");
+        printf("\n\nReverse alphabet order:\n\n");
         qSort((void **) lineptrs, 0, nlines-1, (int (*)(void*, void*))(RevStrcmp));
         WriteText(lineptrs, nlines);
 

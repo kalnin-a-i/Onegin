@@ -1,4 +1,4 @@
-# include <stdio.h>
+# include "stdio.h"
 
 //----------------------------------------------------------------
 /** @file */
@@ -17,7 +17,7 @@ int GetLine(char *line, FILE *file, int maxlen)
 
     while ((c = (char)getc(file)) != '\n' && i < maxlen && c != EOF)
     {
-        if (c != '?' && c != '!' && c != ',' && c != '.' && c != ';' && c != ':' && c != ' '){
+        if (c != '?' && c != '!' && c != ',' && c != '.' && c != ';' && c != ':' && c != ' ' && c !='\''){
             *(line + i) = c;
             i++;
         }

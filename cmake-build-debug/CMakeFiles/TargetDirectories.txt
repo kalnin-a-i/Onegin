@@ -1,0 +1,3 @@
+/home/alexey/CLionProjects/Onegin_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/alexey/CLionProjects/Onegin_2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/alexey/CLionProjects/Onegin_2/cmake-build-debug/CMakeFiles/Onegin_2.dir

@@ -1,7 +1,6 @@
-#include <string.h>
-#include <assert.h>
-#include <math.h>
-#include <stdio.h>
+#include "string.h"
+#include "assert.h"
+#include "line.h"
 
 //------------------------------------------------------------------------
 /** @file */
@@ -10,14 +9,16 @@
 //! @param[in] 2d string
 //! @return positive number if str2 > str1, 0 if str1 = str2, otherwise 0
 //-------------------------------------------------------------------------
-int RevStrcmp(char* str1, char* str2)
+int RevStrcmp(line* line1, line* line2)
 {
-    assert(str1 != NULL);
-    assert(str2 != NULL);
+    assert(line1 != NULL);
+    assert(line2 != NULL);
 
     int i = 0;
-    int len1 = strlen(str1);
-    int len2 = strlen(str2);
+    int len1 = line1->len;
+    int len2 = line2->len;
+    char *str1 = line1->str;
+    char *str2 = line2->str;
     while (i < len1 && i < len2)
     {
         if (str1[len1 - i - 1] != str2[len2 - i - 1])
@@ -29,7 +30,7 @@ int RevStrcmp(char* str1, char* str2)
     return len2 - len1;
 }
 
-void CheckRev(char *str1, char *str2, int answer)
+/*void CheckRev(char *str1, char *str2, int answer)
 {
     assert(str1 != NULL);
     assert(str2 != NULL);
@@ -56,4 +57,4 @@ void TestRev()
     CheckRev("asdfg", "asdfk", 1);
     CheckRev("f", "k", 1);
     CheckRev("fk", "kkk", 1);
-}
+}*/

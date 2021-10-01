@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Onegin_2.dir/main.cpp.o CMakeFiles/Onegin_2.dir/qsort.cpp.o CMakeFiles/Onegin_2.dir/getwords.cpp.o CMakeFiles/Onegin_2.dir/writewords.cpp.o CMakeFiles/Onegin_2.dir/getline.cpp.o CMakeFiles/Onegin_2.dir/free.cpp.o CMakeFiles/Onegin_2.dir/reversestrcmp.cpp.o CMakeFiles/Onegin_2.dir/linecmp.cpp.o -o Onegin_2 
